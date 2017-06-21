@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% if status_code == 404 %}
+    {% set status_text = "Page non-touvé" %}
+{% endif %}
+
+{% block title %}{{ status_text }}{% endblock %}
+{% block main_content %}
+
+<h2>Le serveur a retourner une "{{ status_code }} - {{ status_text }}".</h2>
+
+{% endblock %}
