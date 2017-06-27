@@ -122,3 +122,10 @@ body {
     margin-right: 5%;
     text-align: justify;
 }
+
+.form-login {
+    margin: auto 30%;
+}
+.form-login input[type=submit] {
+    margin-top: 40px;
+}
